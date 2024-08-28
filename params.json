@@ -1,0 +1,11 @@
+{
+    "fastq": "${projectDir}/data/fastq/*_{R1,R2}.fastq.gz",
+    "outdir": "output",
+    "strandedness": "reverse",
+    "readType": "paired",
+    "viral_fasta": "${projectDir}/data/ref/palmdb_rdrp_seqs.fa",
+    "viral_t2g": "${projectDir}/data/ref/palmdb_clustered_t2g.txt",
+    "cdna": "${projectDir}/data/ref/gencode.v46.transcripts.fa.gz",
+    "genome": "${projectDir}/data/ref/GRCh38.primary_assembly.genome.fa.gz",
+    "gtf": "${projectDir}/data/ref/gencode.v46.annotation.gtf.gz"
+}

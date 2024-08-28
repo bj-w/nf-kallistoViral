@@ -1,0 +1,101 @@
+Aug-28 13:53:39.856 [main] DEBUG nextflow.cli.Launcher - $> nextflow run kallistoViral.nf -config nextflow.config -params-file params.json
+Aug-28 13:53:40.220 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Aug-28 13:53:40.392 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/mnt/nfs/home/b8057117/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Aug-28 13:53:40.429 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-28 13:53:40.431 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-28 13:53:40.436 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Aug-28 13:53:40.495 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-28 13:53:40.574 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/nextflow.config
+Aug-28 13:53:40.579 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/nextflow.config
+Aug-28 13:53:40.581 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/nextflow.config
+Aug-28 13:53:40.582 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/nextflow.config
+Aug-28 13:53:40.707 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /mnt/nfs/home/b8057117/.nextflow/secrets/store.json
+Aug-28 13:53:40.711 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5b5caf08] - activable => nextflow.secret.LocalSecretsProvider@5b5caf08
+Aug-28 13:53:40.785 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Aug-28 13:53:42.493 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Aug-28 13:53:42.725 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Aug-28 13:53:42.755 [main] DEBUG nextflow.cli.CmdRun - Launching `kallistoViral.nf` [silly_northcutt] DSL2 - revision: ec33c7c265
+Aug-28 13:53:42.768 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-28 13:53:42.770 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-28 13:53:42.924 [main] DEBUG nextflow.Session - Session UUID: e48a8efd-56a9-4a19-9950-86d0b1761b75
+Aug-28 13:53:42.925 [main] DEBUG nextflow.Session - Run name: silly_northcutt
+Aug-28 13:53:42.926 [main] DEBUG nextflow.Session - Executor pool size: 2
+Aug-28 13:53:42.956 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-28 13:53:43.309 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (08:05 BST)
+  System: Linux 3.10.0-1160.88.1.el7.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 11176@sb090.cluster [10.3.81.170]
+  CPUs: 1 - Mem: 8 GB (7.6 GB) - Swap: 10 GB (9.7 GB) - Virtual threads ON
+Aug-28 13:53:43.508 [main] DEBUG nextflow.Session - Work-dir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work [lustre]
+Aug-28 13:53:43.509 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/bin
+Aug-28 13:53:43.525 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-28 13:53:43.559 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-28 13:53:43.669 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-28 13:53:43.696 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Aug-28 13:53:43.884 [main] DEBUG nextflow.Session - Session start
+Aug-28 13:53:45.464 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-28 13:53:45.908 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Aug-28 13:53:45.909 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Aug-28 13:53:45.944 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Aug-28 13:53:45.955 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 20; pollInterval: 5s; dumpInterval: 5m 
+Aug-28 13:53:45.958 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Aug-28 13:53:45.973 [main] DEBUG n.processor.TaskPollingMonitor - Creating submit rate limit of 50 submissions per 120 seconds
+Aug-28 13:53:45.978 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Aug-28 13:53:46.205 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Aug-28 13:53:46.206 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Aug-28 13:53:46.272 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Aug-28 13:53:46.272 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Aug-28 13:53:46.328 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Aug-28 13:53:46.329 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Aug-28 13:53:46.358 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: targetIndex, quantifyTarget, viralIndex, quantifyViral
+Aug-28 13:53:46.359 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Aug-28 13:53:46.373 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/data/fastq/; pattern: *_{R1,R2}.fastq.gz; options: [checkIfExists:true]
+Aug-28 13:53:46.384 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > viralIndex
+Aug-28 13:53:46.399 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > targetIndex
+Aug-28 13:53:46.407 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quantifyViral
+Aug-28 13:53:46.425 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > quantifyTarget
+Aug-28 13:53:46.478 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_bc38cc800e93dd9b: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/kallistoViral.nf
+Aug-28 13:53:46.478 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-28 13:53:46.479 [main] DEBUG nextflow.Session - Session await
+Aug-28 13:53:46.703 [Actor Thread 17] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/kb-python:0.28.2--pyhdfd78af_2; path=/mnt/storage/nobackup/proj/ghwtcmr/ben/software/nf_core/singularity/depot.galaxyproject.org-singularity-kb-python-0.28.2--pyhdfd78af_2.img
+Aug-28 13:53:47.100 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process targetIndex > jobId: 22626813; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/52/d6ab1001e7ae19bd03d7cefef8d206
+Aug-28 13:53:47.103 [Task submitter] INFO  nextflow.Session - [52/d6ab10] Submitted process > targetIndex
+Aug-28 13:53:48.772 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process viralIndex > jobId: 22626814; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/eb/862e51ea559685d681553b511726bb
+Aug-28 13:53:48.776 [Task submitter] INFO  nextflow.Session - [eb/862e51] Submitted process > viralIndex
+Aug-28 13:58:51.004 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[jobId: 22626813; id: 2; name: targetIndex; status: RUNNING; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/52/d6ab1001e7ae19bd03d7cefef8d206 started: 1724849631002; exited: -; ]
+~> TaskHandler[jobId: 22626814; id: 1; name: viralIndex; status: RUNNING; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/eb/862e51ea559685d681553b511726bb started: 1724849660988; exited: -; ]
+Aug-28 14:03:51.015 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[jobId: 22626813; id: 2; name: targetIndex; status: RUNNING; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/52/d6ab1001e7ae19bd03d7cefef8d206 started: 1724849631002; exited: -; ]
+~> TaskHandler[jobId: 22626814; id: 1; name: viralIndex; status: RUNNING; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/eb/862e51ea559685d681553b511726bb started: 1724849660988; exited: -; ]
+Aug-28 14:08:36.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626813; id: 2; name: targetIndex; status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/52/d6ab1001e7ae19bd03d7cefef8d206 started: 1724849631002; exited: 2024-08-28T13:08:33Z; ]
+Aug-28 14:08:36.374 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quantifyTarget (INC056) > jobId: 22626839; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/75/43703575b681be2152a8fa13f66afa
+Aug-28 14:08:36.374 [Task submitter] INFO  nextflow.Session - [75/437035] Submitted process > quantifyTarget (INC056)
+Aug-28 14:08:37.719 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quantifyTarget (IN001) > jobId: 22626840; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/cd/950528123259ddb09862b7a6da9e66
+Aug-28 14:08:37.719 [Task submitter] INFO  nextflow.Session - [cd/950528] Submitted process > quantifyTarget (IN001)
+Aug-28 14:08:51.029 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[jobId: 22626814; id: 1; name: viralIndex; status: RUNNING; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/eb/862e51ea559685d681553b511726bb started: 1724849660988; exited: -; ]
+~> TaskHandler[jobId: 22626839; id: 3; name: quantifyTarget (INC056); status: SUBMITTED; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/75/43703575b681be2152a8fa13f66afa started: -; exited: -; ]
+~> TaskHandler[jobId: 22626840; id: 4; name: quantifyTarget (IN001); status: SUBMITTED; exit: -; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/cd/950528123259ddb09862b7a6da9e66 started: -; exited: -; ]
+Aug-28 14:09:41.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626839; id: 3; name: quantifyTarget (INC056); status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/75/43703575b681be2152a8fa13f66afa started: 1724850541064; exited: 2024-08-28T13:09:40Z; ]
+Aug-28 14:09:41.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626840; id: 4; name: quantifyTarget (IN001); status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/cd/950528123259ddb09862b7a6da9e66 started: 1724850541075; exited: 2024-08-28T13:09:40Z; ]
+Aug-28 14:10:46.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626814; id: 1; name: viralIndex; status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/eb/862e51ea559685d681553b511726bb started: 1724849660988; exited: 2024-08-28T13:10:43Z; ]
+Aug-28 14:10:46.231 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quantifyViral (INC056) > jobId: 22626844; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/48/47853d73b7045ef1624ce6787ea128
+Aug-28 14:10:46.231 [Task submitter] INFO  nextflow.Session - [48/47853d] Submitted process > quantifyViral (INC056)
+Aug-28 14:10:47.628 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process quantifyViral (IN001) > jobId: 22626845; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/04/fbb539b553f451da31700e619ef963
+Aug-28 14:10:47.628 [Task submitter] INFO  nextflow.Session - [04/fbb539] Submitted process > quantifyViral (IN001)
+Aug-28 14:11:46.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626844; id: 5; name: quantifyViral (INC056); status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/48/47853d73b7045ef1624ce6787ea128 started: 1724850661038; exited: 2024-08-28T13:11:44Z; ]
+Aug-28 14:11:51.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22626845; id: 6; name: quantifyViral (IN001); status: COMPLETED; exit: 0; error: -; workDir: /mnt/storage/nobackup/proj/ghwtcmr/ben/viral/nf_dev/work/04/fbb539b553f451da31700e619ef963 started: 1724850661070; exited: 2024-08-28T13:11:46Z; ]
+Aug-28 14:11:51.220 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-28 14:11:56.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Aug-28 14:11:56.040 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-28 14:11:56.219 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Aug-28 14:11:56.219 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Aug-28 14:11:56.240 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2h 28m; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=20; peakMemory=48 GB; ]
+Aug-28 14:11:56.500 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-28 14:11:56.556 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-28 14:11:56.557 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
