@@ -1,5 +1,5 @@
 # nf-kallistoViral
-This workflow is a wrapper around the method described by Luebbert et al., 2024<sup>[1](https://www.biorxiv.org/content/10.1101/2023.12.11.571168v2)</sup> in which Kallisto is used to quantify reads of viral origin in RNA-seq data (bulk + since-cell). 
+This workflow is a wrapper around the method described by Luebbert et al., 2024<sup>[1](https://www.biorxiv.org/content/10.1101/2023.12.11.571168v2)</sup> in which Kallisto is used to quantify reads of viral origin in RNA-seq data (bulk + since-cell).   
 This wrapper is currently **bulk only**.
 
 ---
@@ -14,7 +14,7 @@ This workflow uses a containerised version of [kallisto | bustools](https://gith
 ## Set up
 This workflow requires several reference files providing information on both viral and 'host' species to be downloaded prior to running. Here, 'host' species refers to the species of origin of the sequenced samples.
 
-Firstly, the reference genome and transcriptome (cDNA) of the host species is required in FASTA format, along with a GTF annotation. 
+Firstly, the reference genome and transcriptome (cDNA) of the host species is required in FASTA format, along with a GTF annotation.  
 An example for the GENCODE v46 release for Humans is shown below.
 ```bash
 # Genome
@@ -35,13 +35,13 @@ wget https://raw.githubusercontent.com/pachterlab/LSCHWCP_2023/main/PalmDB/palmd
 
 ---
 ## Instructions
-This workflow is written in Nextflow - see [here](https://www.nextflow.io/docs/latest/install.html) for installation info.
+This workflow is written in Nextflow - see [here](https://www.nextflow.io/docs/latest/install.html) for installation info.  
 Alternatively, Nextflow can be installed into a conda/mamba environments (my preferred method).
 ```bash
 micromamba create -n nextflow nextflow
 ```
 
-Nextflow configurations are important for optimal functioning - more info [here](https://www.nextflow.io/docs/latest/config.html).
+Nextflow configurations are important for optimal functioning - more info [here](https://www.nextflow.io/docs/latest/config.html).  
 An example config file for use with Newcastle University's Rocket HPC is provided - `rocket.config`
 
 
@@ -97,14 +97,14 @@ micromamba activate nextflow
 nextflow run kallistoViral.nf -config <config_file> -params-file <params_file>
 ```
 
-However, it is advised to submit the nextflow job as a batch job to save resources on the login/head node. An example of this for use with the SLURM workload manager manager is given in `launcher_slurm.sh` which can be run using
+However, it is advised to submit the nextflow job as a batch job to save resources on the login/head node. An example of this for use with the SLURM workload manager is given in `launcher_slurm.sh` which can be run using
 ```bash
 sbatch launcher_slurm.sh
 ```
 
 ---
 ## Output
-When finished successfully, the specified output folder should contain host (transcript + gene) and viral abundances for each sample. 
+When finished successfully, the specified output folder should contain host (transcript + gene) and viral abundances for each sample.   
 Information regarding the run + quantification is contained within JSON files.
 ```
 output
