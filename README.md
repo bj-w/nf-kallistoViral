@@ -1,5 +1,5 @@
 # nf-kallistoViral
-This workflow is a wrapper around the method described by Luebbert et al., 2024<sup>[1](https://www.biorxiv.org/content/10.1101/2023.12.11.571168v2)</sup> in which Kallisto is used to quantify reads of viral origin in RNA-seq data (bulk + since-cell).   
+This workflow is a wrapper around the method described by Luebbert et al., 2024<sup>[1](https://www.biorxiv.org/content/10.1101/2023.12.11.571168v2)</sup> in which Kallisto is used to quantify reads of viral origin in RNA-seq data (bulk + single-cell).   
 This wrapper is currently **bulk only**.
 
 ---
